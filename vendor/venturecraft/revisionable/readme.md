@@ -162,6 +162,18 @@ To better format the output for `deleted_at` entries, you can use the `isEmpty` 
 
 <a name="control"></a>
 
+### Storing Force Delete
+By default the Force Delete of a model is not stored as a revision.
+
+If you want to store the Force Delete as a revision you can override this behavior by setting `revisionForceDeleteEnabled ` to `true` by adding the following to your model:
+```php
+protected $revisionForceDeleteEnabled = true;
+```
+
+In which case, the `created_at` field will be stored as a key with the `oldValue()` value equal to the model creation date and the `newValue()` value equal to `null`.
+
+**Attention!** Turn on this setting carefully! Since the model saved in the revision, now does not exist, so you will not be able to get its object or its relations. 
+
 ### Storing Creations
 By default the creation of a new model is not stored as a revision.
 Only subsequent changes to a model is stored.
@@ -186,6 +198,21 @@ protected $dontKeepRevisionOf = ['category_id'];
 ```
 
 > The `$keepRevisionOf` setting takes precedence over `$dontKeepRevisionOf`
+
+### Storing additional fields in revisions
+
+In some cases, you'll want additional metadata from the models in each revision. An example of this might be if you 
+have to keep track of accounts as well as users. Simply create your own new migration to add the fields you'd like to your revision model,
+add them to your config/revisionable.php in an array like so:
+
+```php 
+'additional_fields' => ['account_id', 'permissions_id', 'other_id'], 
+```
+
+If the column exists in the model, it will be included in the revision. 
+
+Make sure that if you can't guarantee the column in every model, you make that column ```nullable()``` in your migrations.  
+
 
 ### Events
 

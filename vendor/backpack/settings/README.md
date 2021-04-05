@@ -8,7 +8,7 @@
 [![Style CI](https://styleci.io/repos/53683729/shield)](https://styleci.io/repos/53683729)
 [![Total Downloads][ico-downloads]][link-downloads]
 
-An interface for the administrator to easily change application settings. Uses Laravel Backpack. Works on Laravel 5.2 to Laravel 7.
+An interface for the administrator to easily change application settings. Uses Laravel Backpack. Works on Laravel 5.2 to Laravel 8.
 
 > ### Security updates and breaking changes
 > Please **[subscribe to the Backpack Newsletter](http://backpackforlaravel.com/newsletter)** so you can find out about any security updates, breaking changes or major features. We send an email every 1-2 months.
@@ -54,12 +54,12 @@ Settings are stored in the database in the "settings" table. Its columns are:
 - name (ex: Contact form email address)
 - description (ex: The email address that all emails go to.)
 - value (ex: admin@laravelbackpack.com)
-- field (Backpack CRUD field configuration in JSON format. https://laravel-backpack.readme.io/docs/crud-fields#standard-field-types)
+- field (Backpack CRUD field configuration in JSON format. https://backpackforlaravel.com/docs/crud-fields#default-field-types)
 - active (1 or 0)
 - created_at
 - updated_at
 
-There is no interface available to add new settings. They are added by the developer directly in the database, since the Backpack CRUD field configuration is a bit complicated. See the field types and their configuration code on https://laravel-backpack.readme.io/docs
+There is no interface available to add new settings. They are added by the developer directly in the database, since the Backpack CRUD field configuration is a bit complicated. See the field types and their configuration code on https://backpackforlaravel.com/docs
 
 ### Override existing configurations
 
@@ -135,10 +135,10 @@ For example, you can override the Backpack `show_powered_by` or the `skin` setti
 
 ## Screenshots
 
-See http://laravelbackpack.com
+See [backpackforlaravel.com](https://backpackforlaravel.com)
 
 - List view:
-![List / table view in Backpack/Settings](https://backpackforlaravel.com/uploads/screenshots/settings_list.png)
+![List / table view in Backpack/Settings](https://user-images.githubusercontent.com/1032474/111115626-8f7a0480-856d-11eb-99bb-3004ec621ebb.gif)
 - Editing a setting with the email field type:
 
 ## Change log
@@ -175,7 +175,7 @@ Please **[subscribe to the Backpack Newsletter](http://backpackforlaravel.com/ne
 
 ## License
 
-Backpack is free for non-commercial use and 49 EUR/project for commercial use. Please see [License File](LICENSE.md) and [backpackforlaravel.com](https://backpackforlaravel.com/#pricing) for more information.
+Backpack is free for non-commercial use and 69 EUR/project for commercial use. Please see [License File](LICENSE.md) and [backpackforlaravel.com](https://backpackforlaravel.com/pricing) for more information.
 
 ## Hire us
 

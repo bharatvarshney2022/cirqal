@@ -2,6 +2,30 @@
 
 All notable changes to `laravel-backup` will be documented in this file.
 
+## 6.15.1 - 2021-03-16
+
+- avoid exception when ZipArchive::EM_AES_256 is not available
+
+## 6.15.0 - 2021-03-02
+
+- allow to encrypt backup archives (#1239)
+
+## 6.14.3 - 2021-01-29
+
+- fix for #1225 (#1227)
+
+## 6.14.2 - 2020-12-27
+
+- add norwegian
+
+## 6.14.1 - 2020-12-16
+
+- fix exception messages
+
+## 6.14.0 - 2020-12-08
+
+- add option to add files to zip-file using relative path (#1158)
+
 ## 6.13.1 - 2020-12-01
 
 - Update README.md, docs and comment in config file (#1154)

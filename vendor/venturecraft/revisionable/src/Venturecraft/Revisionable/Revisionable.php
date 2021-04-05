@@ -72,6 +72,7 @@ class Revisionable extends Eloquent
         static::deleted(function ($model) {
             $model->preSave();
             $model->postDelete();
+            $model->postForceDelete();
         });
     }
     /**
@@ -80,7 +81,12 @@ class Revisionable extends Eloquent
      */
     public static function newModel()
     {
-        $model = \Config::get('revisionable.model', 'Venturecraft\Revisionable\Revision');
+        $model = app('config')->get('revisionable.model');
+
+        if (! $model) {
+            $model = 'Venturecraft\Revisionable\Revision';
+        }
+
         return new $model;
     }
 
@@ -221,6 +227,37 @@ class Revisionable extends Eloquent
             );
             $revision = static::newModel();
             \DB::table($revision->getTable())->insert($revisions);
+        }
+    }
+
+    /**
+     * If forcedeletes are enabled, set the value created_at of model to null
+     *
+     * @return void|bool
+     */
+    public function postForceDelete()
+    {
+        if (empty($this->revisionForceDeleteEnabled)) {
+            return false;
+        }
+
+        if ((!isset($this->revisionEnabled) || $this->revisionEnabled)
+            && (($this->isSoftDelete() && $this->isForceDeleting()) || !$this->isSoftDelete())) {
+
+            $revisions[] = array(
+                'revisionable_type' => $this->getMorphClass(),
+                'revisionable_id' => $this->getKey(),
+                'key' => self::CREATED_AT,
+                'old_value' => $this->{self::CREATED_AT},
+                'new_value' => null,
+                'user_id' => $this->getSystemUserId(),
+                'created_at' => new \DateTime(),
+                'updated_at' => new \DateTime(),
+            );
+
+            $revision = Revisionable::newModel();
+            \DB::table($revision->getTable())->insert($revisions);
+            \Event::dispatch('revisionable.deleted', array('model' => $this, 'revisions' => $revisions));
         }
     }
 

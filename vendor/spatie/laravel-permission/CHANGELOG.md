@@ -2,6 +2,22 @@
 
 All notable changes to `laravel-permission` will be documented in this file
 
+## 4.0.1 - 2021-03-22
+- Added note in migration for field lengths on MySQL 8. (either shorten the columns to 125 or use InnoDB)
+
+## 4.0.0 - 2021-01-27
+- Drop support on Laravel 5.8 #1615
+- Fix bug when adding roles to a model that doesn't yet exist #1663
+- Enforce unique constraints on database level #1261
+- Changed PermissionRegistrar::initializeCache() public to allow reinitializing cache in custom situations. #1521
+- Use Eloquent\Collection instead of Support\Collection for consistency, collection merging, etc #1630
+
+This package now requires PHP 7.2.5 and Laravel 6.0 or higher.
+If you are on a PHP version below 7.2.5 or a Laravel version below 6.0 you can use an older version of this package.
+
+## 3.18.0 - 2020-11-27
+- Allow PHP 8.0
+
 ## 3.17.0 - 2020-09-16
 - Optional `$guard` parameter may be passed to `RoleMiddleware`, `PermissionMiddleware`, and `RoleOrPermissionMiddleware`. See #1565
 

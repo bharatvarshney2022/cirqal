@@ -1,0 +1,27 @@
+{
+    "name": "apapazisis/laravel-echarts",
+    "description": "Laravel Echarts",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0"
+    },
+    "authors": [
+        {
+            "name": "Apostolos Papazisis",
+            "email": "info@apapazisis.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Apapazisis\\Echarts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Apapazisis\\Echarts\\EchartsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

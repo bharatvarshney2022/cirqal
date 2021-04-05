@@ -8,8 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'Venturecraft\\Revisionable' => array($vendorDir . '/venturecraft/revisionable/src'),
     'Snowplow\\RefererParser' => array($vendorDir . '/snowplow/referer-parser/php/src'),
-    'Rize\\UriTemplate' => array($vendorDir . '/rize/uri-template/src'),
+    'Sabberworm\\CSS' => array($vendorDir . '/sabberworm/php-css-parser/lib'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
+    'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
     'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),
     'Bllim\\Datatables' => array($vendorDir . '/pragmarx/datatables/src'),
 );

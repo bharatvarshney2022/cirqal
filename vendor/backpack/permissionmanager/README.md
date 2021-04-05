@@ -35,7 +35,7 @@ composer require backpack/permissionmanager
 ```
 
 2) Finish all installation steps for [spatie/laravel-permission](https://github.com/spatie/laravel-permission#installation), which as been pulled as a dependency. Run its migrations. Publish its config files. Most likely it's:
-```bash
+```shell
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"
 php artisan migrate
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="config"
@@ -113,6 +113,22 @@ Please note:
 
 
 7) [Optional] Disallow create/update on your roles or permissions after you define them, using the config file in **config/backpack/permissionmanager.php**. Please note permissions and roles are referenced in code using their name. If you let your admins edit these strings and they do, your permission and role checks will stop working.
+
+
+## Customize UserCrudController
+
+If you would like to add more fields to the default user controller provided by this package, you can bind your own controller to overwrite the one provided in this package:
+
+```php
+// in some ServiceProvider, AppServiceProvider for example
+
+$this->app->bind(
+    \Backpack\PermissionManager\app\Http\Controllers\UserCrudController::class, //this is package controller
+    \App\Http\Controllers\Admin\UserCrudController::class //this should be your own controller
+);
+
+// this tells Laravel that when UserCrudController is requested, your own UserCrudController should be served.
+```
 
 
 ## API Usage
@@ -219,6 +235,8 @@ To upgrade from PermissionManager 3.x to 4.x:
 - require ```backpack/permissionmanager``` version ```4.0.*``` in your ```composer.json``` file;
 - delete your old ```config/backpack/permissionmanager.php``` file;
 - follow the installation steps above;
+
+If you are upgrading to a Laravel 8 instalation, please note that User Model may have moved from ```App\User::class``` to ```App\Models\User::class```, check if your config is compliant with that change ```config/backpack/permissionmanager.php```.
 
 ## Change log
 

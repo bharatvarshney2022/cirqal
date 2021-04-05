@@ -10,7 +10,7 @@
 
 An interface to let your admins add and edit presentation pages to your Laravel 6, 7 or 8 website, by defining page templates with any number of content areas and any number of content types. Uses [Laravel Backpack](https://github.com/laravel-backpack).
 
-![Backpack PageManager edit page](https://backpackforlaravel.com/uploads/screenshots/page_edit.png "PageManager edit page")
+![Backpack PageManager edit page](https://user-images.githubusercontent.com/1032474/106446854-6dc73100-6489-11eb-9e4c-b21273cef23e.png "PageManager edit page")
 
 
 > ### Security updates and breaking changes
@@ -115,7 +115,7 @@ php artisan migrate
 5) [optional] Add a menu item for it in resources/views/vendor/backpack/base/inc/sidebar.blade.php or menu.blade.php:
 
 ```
-php artisan backpack:add-sidebar-content "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('page') }}'><i class='nav-icon fa fa-file-o'></i> <span>Pages</span></a></li>"
+php artisan backpack:add-sidebar-content "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('page') }}'><i class='nav-icon la la-file-o'></i> <span>Pages</span></a></li>"
 ```
 
 
@@ -197,7 +197,7 @@ If you need to modify how this works in a project:
 
 ## Security
 
-If you discover any security related issues, please email hello@tabacitu.ro instead of using the issue tracker.
+If you discover any security related issues, please email hello@backpackforlaravel.com instead of using the issue tracker.
 
 ## Credits
 

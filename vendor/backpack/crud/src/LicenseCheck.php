@@ -29,7 +29,7 @@ trait LicenseCheck
         }
 
         if (! $this->validCode(config('backpack.base.license_code'))) {
-            \Alert::add('warning', "<strong>You're using unlicensed software.</strong> Please ask your web developer to <a target='_blank' class='alert-link text-white' href='http://backpackforlaravel.com'>purchase a license code</a> to hide this message.");
+            //\Alert::add('warning', "<strong>You're using unlicensed software.</strong> Please ask your web developer to <a target='_blank' class='alert-link text-white' href='http://backpackforlaravel.com'>purchase a license code</a> to hide this message.");
         }
     }
 
