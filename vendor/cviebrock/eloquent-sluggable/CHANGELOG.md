@@ -1,5 +1,15 @@
 # Change Log
 
+## 7.0.2 - 08-Dec-2020
+
+- Add PHP 8.0 support (#535, thanks @fulopattila122)
+
+
+## 7.0.1 - 06-Apr-2020
+
+- fix to help support translatable slugs (using either spatie or Astrotomic package) (#506, thanks @GeoSot) 
+
+
 ## 7.0.0 - 04-Mar-2020
 
 - Laravel 7.0 support

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7cbb50aa6e1a3ba5f4533c75f5498f75",
+    "content-hash": "d4989c73dd3ef267e63f336a92b1b4b2",
     "packages": [
         {
             "name": "apapazisis/laravel-echarts",
@@ -1655,16 +1655,16 @@
         },
         {
             "name": "cviebrock/eloquent-sluggable",
-            "version": "7.0.0",
+            "version": "7.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cviebrock/eloquent-sluggable.git",
-                "reference": "4543263ebcb889845abef09ea40979a1a454612d"
+                "reference": "b3616ff51a80f8f408879b2f41936e8b45748e13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/4543263ebcb889845abef09ea40979a1a454612d",
-                "reference": "4543263ebcb889845abef09ea40979a1a454612d",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/b3616ff51a80f8f408879b2f41936e8b45748e13",
+                "reference": "b3616ff51a80f8f408879b2f41936e8b45748e13",
                 "shasum": ""
             },
             "require": {
@@ -1672,7 +1672,7 @@
                 "illuminate/config": "^7.0",
                 "illuminate/database": "^7.0",
                 "illuminate/support": "^7.0",
-                "php": "^7.2.5"
+                "php": "^7.2.5|^8.0"
             },
             "require-dev": {
                 "limedeck/phpunit-detailed-printer": "^5.0",
@@ -1716,9 +1716,9 @@
             ],
             "support": {
                 "issues": "https://github.com/cviebrock/eloquent-sluggable/issues",
-                "source": "https://github.com/cviebrock/eloquent-sluggable/tree/master"
+                "source": "https://github.com/cviebrock/eloquent-sluggable/tree/7.0.2"
             },
-            "time": "2020-03-05T02:01:38+00:00"
+            "time": "2020-12-08T23:04:55+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

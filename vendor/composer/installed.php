@@ -261,12 +261,12 @@
     ),
     'cviebrock/eloquent-sluggable' => 
     array (
-      'pretty_version' => '7.0.0',
-      'version' => '7.0.0.0',
+      'pretty_version' => '7.0.2',
+      'version' => '7.0.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4543263ebcb889845abef09ea40979a1a454612d',
+      'reference' => 'b3616ff51a80f8f408879b2f41936e8b45748e13',
     ),
     'davedevelopment/hamcrest-php' => 
     array (

@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Kolkata',
 
     /*
     |--------------------------------------------------------------------------
@@ -176,7 +176,13 @@ return [
         App\Providers\RouteServiceProvider::class,
 		
 		'Barryvdh\TranslationManager\ManagerServiceProvider',
-		Barryvdh\Elfinder\ElfinderServiceProvider::class
+		Venturecraft\Revisionable\RevisionableServiceProvider::class,
+		PragmaRX\Tracker\Vendor\Laravel\ServiceProvider::class,
+        Barryvdh\Elfinder\ElfinderServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class, 
+        RezaAr\Highcharts\Provider::class,
+        Fx3costa\LaravelChartJs\Providers\ChartjsServiceProvider::class,
+        LaravelFCM\FCMServiceProvider::class,
 
     ],
 
@@ -229,6 +235,12 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+	'Tracker' => 'PragmaRX\Tracker\Vendor\Laravel\Facade',
+	'Input' => Illuminate\Support\Facades\Request::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+        'Chart' => RezaAr\Highcharts\Facade::class,
+        'FCM'      => LaravelFCM\Facades\FCM::class,
+        'FCMGroup' => LaravelFCM\Facades\FCMGroup::class, // Optional
 
     ],
 

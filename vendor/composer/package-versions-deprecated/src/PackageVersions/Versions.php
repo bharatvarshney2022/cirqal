@@ -58,7 +58,7 @@ final class Versions
   'composer/package-versions-deprecated' => '1.11.99.1@7413f0b55a051e89485c5cb9f765fe24bb02a7b6',
   'consoletvs/charts' => '7.2.0@cc820595e9bec13fbaf4cf552128860830a0f9e2',
   'creativeorange/gravatar' => 'v1.0.20@8c2c1a3a59fdf05f50c9d9413dd9d2d50835e017',
-  'cviebrock/eloquent-sluggable' => '7.0.0@4543263ebcb889845abef09ea40979a1a454612d',
+  'cviebrock/eloquent-sluggable' => '7.0.2@b3616ff51a80f8f408879b2f41936e8b45748e13',
   'dnoegel/php-xdg-base-dir' => 'v0.1.1@8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd',
   'doctrine/cache' => '1.10.2@13e3381b25847283a91948d04640543941309727',
   'doctrine/dbal' => '2.13.0@67d56d3203b33db29834e6b2fcdbfdc50535d796',
