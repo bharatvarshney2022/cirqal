@@ -102,7 +102,7 @@ class NewsArticleCrudController extends CrudController
 
             $this->crud->addField([
                 'name' => 'title',
-                'label' => 'Title',
+                'label' => trans('backpack::news.title'),
                 'type' => 'text',
                 'placeholder' => 'Your title here',
             ]);
