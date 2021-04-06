@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\ArticleRequest;
+use App\Http\Requests\NewsArticleRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
-class ArticleCrudController extends CrudController
+class NewsArticleCrudController extends CrudController
 {
 	use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -27,9 +27,9 @@ class ArticleCrudController extends CrudController
         | BASIC CRUD INFORMATION
         |--------------------------------------------------------------------------
         */
-        $this->crud->setModel("App\Models\Article");
-        $this->crud->setRoute(config('backpack.base.route_prefix', 'admin').'/news');
-        $this->crud->setEntityNameStrings('news', 'newes');
+        $this->crud->setModel("App\Models\NewsArticle");
+        $this->crud->setRoute(config('backpack.base.route_prefix', 'admin').'/article');
+        $this->crud->setEntityNameStrings('article', 'articles');
 
         /*
         |--------------------------------------------------------------------------
@@ -98,7 +98,7 @@ class ArticleCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
         $this->crud->operation(['create', 'update'], function () {
-            $this->crud->setValidation(ArticleRequest::class);
+            $this->crud->setValidation(NewsArticleRequest::class);
 
             $this->crud->addField([
                 'name' => 'title',
@@ -129,18 +129,6 @@ class ArticleCrudController extends CrudController
                 'name' => 'image',
                 'label' => 'Image',
                 'type' => 'browse',
-            ]);
-			$this->crud->addField([
-                'name' => 'article_source',
-                'label' => 'News Source',
-                'type' => 'text',
-                'placeholder' => 'Your News Source',
-            ]);
-			$this->crud->addField([
-                'name' => 'source_url',
-                'label' => 'Source Url',
-                'type' => 'url',
-                'placeholder' => 'Your Source Url here',
             ]);
             $this->crud->addField([
                 'label' => 'Category',

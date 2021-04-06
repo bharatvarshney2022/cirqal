@@ -27,4 +27,7 @@ return [
     'users'                 => 'Users',
     'guard_type'            => 'Guard Type',
 
+    'author'                => 'Author',
+    'authors'               => 'Authors',
+
 ];
