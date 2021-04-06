@@ -53,7 +53,7 @@ class NewsArticleCrudController extends CrudController
                 'label' => 'Category',
                 'type' => 'select',
                 'name' => 'article_category_id',
-                'entity' => 'category',
+                'entity' => 'articlecategory',
                 'attribute' => 'name',
                 'wrapper'   => [
                     'href' => function ($crud, $column, $entry, $related_key) {
@@ -139,12 +139,11 @@ class NewsArticleCrudController extends CrudController
                 'type' => 'browse',
             ]);
             $this->crud->addField([
-                'label' => 'Category',
+                'label' => 'Category1',
                 'type' => 'relationship',
                 'name' => 'article_category_id',
-                'entity' => 'category',
-                'attribute' => 'name',
-                'inline_create' => true,
+                'entity' => 'articlecategory',
+                'attribute' => 'name',  
             ]);
             
             $this->crud->addField([

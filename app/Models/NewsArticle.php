@@ -67,7 +67,7 @@ class NewsArticle extends Model
     |--------------------------------------------------------------------------
     */
 
-    public function category()
+    public function articlecategory()
     {
         return $this->belongsTo('App\Models\ArticleCategory', 'article_category_id');
     }
