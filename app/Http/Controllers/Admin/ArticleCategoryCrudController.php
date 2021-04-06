@@ -23,9 +23,9 @@ class ArticleCategoryCrudController extends CrudController
 
     public function setup()
     {
-        CRUD::setModel("App\Models\Category");
-        CRUD::setRoute(config('backpack.base.route_prefix', 'admin').'/category');
-        CRUD::setEntityNameStrings('category', 'categories');
+        CRUD::setModel("App\Models\ArticleCategory");
+        CRUD::setRoute(config('backpack.base.route_prefix', 'admin').'/article_category');
+        CRUD::setEntityNameStrings('article category', 'article categories');
     }
 
     protected function setupListOperation()
