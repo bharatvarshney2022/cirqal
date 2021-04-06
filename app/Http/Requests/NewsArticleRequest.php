@@ -31,7 +31,8 @@ class NewsArticleRequest extends FormRequest
             'content' => 'required|min:2',
             'date' => 'required|date',
             'status' => 'required',
-            'category_id' => 'required',
+            'article_category_id' => 'required',
+            'author_id' => 'required',
         ];
     }
 

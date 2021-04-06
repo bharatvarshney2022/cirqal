@@ -24,7 +24,7 @@ class NewsArticle extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = ['category_id', 'title', 'slug', 'content', 'image', 'status', 'featured', 'date'];
+    protected $fillable = ['article_category_id', 'author_id', 'title', 'slug', 'content', 'image', 'status', 'featured', 'date'];
 	
 	public $translatable = ['title', 'slug', 'content'];
     // protected $hidden = [];
@@ -69,12 +69,17 @@ class NewsArticle extends Model
 
     public function category()
     {
-        return $this->belongsTo('App\Models\Category', 'category_id');
+        return $this->belongsTo('App\Models\ArticleCategory', 'article_category_id');
+    }
+
+    public function author()
+    {
+        return $this->belongsTo('App\User', 'author_id');
     }
 
     public function tags()
     {
-        return $this->belongsToMany('App\Models\Tag', 'article_tag');
+        return $this->belongsToMany('App\Models\Tag', 'news_article_tag');
     }
 
     /*

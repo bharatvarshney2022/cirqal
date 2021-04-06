@@ -52,28 +52,28 @@ class NewsArticleCrudController extends CrudController
             $this->crud->addColumn([
                 'label' => 'Category',
                 'type' => 'select',
-                'name' => 'category_id',
+                'name' => 'article_category_id',
                 'entity' => 'category',
                 'attribute' => 'name',
                 'wrapper'   => [
                     'href' => function ($crud, $column, $entry, $related_key) {
-                        return backpack_url('category/'.$related_key.'/show');
+                        return backpack_url('article_category/'.$related_key.'/show');
                     },
                 ],
             ]);
-            $this->crud->addColumn('tags');
+            //$this->crud->addColumn('tags');
 
             $this->crud->addFilter([ // select2 filter
-                'name' => 'category_id',
+                'name' => 'article_category_id',
                 'type' => 'select2',
                 'label'=> 'Category',
             ], function () {
                 return \Backpack\NewsCRUD\app\Models\Category::all()->keyBy('id')->pluck('name', 'id')->toArray();
             }, function ($value) { // if the filter is active
-                $this->crud->addClause('where', 'category_id', $value);
+                $this->crud->addClause('where', 'article_category_id', $value);
             });
 
-            $this->crud->addFilter([ // select2_multiple filter
+            /*$this->crud->addFilter([ // select2_multiple filter
                 'name' => 'tags',
                 'type' => 'select2_multiple',
                 'label'=> 'Tags',
@@ -89,7 +89,7 @@ class NewsArticleCrudController extends CrudController
                         }
                     }
                 });
-            });
+            });*/
         });
 
         /*
@@ -113,6 +113,14 @@ class NewsArticleCrudController extends CrudController
                 'hint' => 'Will be automatically generated from your title, if left empty.',
                 // 'disabled' => 'disabled'
             ]);
+
+            $this->crud->addField([
+                'label' => 'Author',
+                'type' => 'relationship',
+                'name' => 'author_id',
+                'entity' => 'author',
+                'attribute' => 'name',
+            ]);
             $this->crud->addField([
                 'name' => 'date',
                 'label' => 'Date',
@@ -133,12 +141,12 @@ class NewsArticleCrudController extends CrudController
             $this->crud->addField([
                 'label' => 'Category',
                 'type' => 'relationship',
-                'name' => 'category_id',
+                'name' => 'article_category_id',
                 'entity' => 'category',
                 'attribute' => 'name',
                 'inline_create' => true,
-                'ajax' => true,
             ]);
+            
             $this->crud->addField([
                 'label' => 'Tags',
                 'type' => 'relationship',
@@ -168,7 +176,7 @@ class NewsArticleCrudController extends CrudController
      */
     public function fetchCategory()
     {
-        return $this->fetch(\Backpack\NewsCRUD\app\Models\Category::class);
+        return $this->fetch(\Backpack\NewsCRUD\app\Models\ArticleCategory::class);
     }
 
     /**
