@@ -21,7 +21,7 @@
 
     <body>
         <main class="main-area">    
-            <header class="header">
+            {{--<header class="header">
                 <div class="header-left">
                     <a href="">
                         <img src="{{ asset('public/assets/') }}/images/back-arrow.svg" alt="">
@@ -51,4 +51,4 @@
                         </li>
                     </ul>
                 </div>
-            </header>
+            </header>--}}

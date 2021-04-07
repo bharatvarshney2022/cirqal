@@ -1,4 +1,4 @@
-        <footer class="footer-bar">
+        {{--<footer class="footer-bar">
             <a href="">
                 <i class="footer-icon"><img src="{{ asset('public/assets/') }}/images/news-icon.svg" alt=""></i>
                 <span>News</span>
@@ -18,8 +18,7 @@
                 <i class="footer-icon"><img src="{{ asset('public/assets/') }}/images/profile-icon.svg" alt=""></i>
                 <span>Profile</span>
             </a>
-        
-        </footer>
+        </footer>--}}
     </main> 
     <script src="{{ asset('public/assets/') }}/js/jquery-2.2.3.min.js"></script>  
     <script src="{{ asset('public/assets/') }}/js/bootstrap.min.js"></script> 
