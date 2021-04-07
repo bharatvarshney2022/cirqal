@@ -128,6 +128,12 @@ class NewsArticleCrudController extends CrudController
                 'default' => date('Y-m-d H:i:s'),
             ]);
             $this->crud->addField([
+                'name' => 'short_content',
+                'label' => 'Short Content',
+                'type' => 'ckeditor',
+                'placeholder' => 'Your textarea text here',
+            ]);
+            $this->crud->addField([
                 'name' => 'content',
                 'label' => 'Content',
                 'type' => 'ckeditor',

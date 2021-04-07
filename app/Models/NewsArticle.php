@@ -24,9 +24,9 @@ class NewsArticle extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = ['article_category_id', 'author_id', 'title', 'slug', 'content', 'image', 'status', 'featured', 'date'];
+    protected $fillable = ['article_category_id', 'author_id', 'title', 'slug', 'short_content', 'content', 'image', 'status', 'featured', 'date'];
 	
-	public $translatable = ['title', 'slug', 'content'];
+	public $translatable = ['title', 'slug', 'short_content', 'content'];
     // protected $hidden = [];
     // protected $dates = [];
     protected $casts = [
