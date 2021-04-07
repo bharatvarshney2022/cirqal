@@ -3,13 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />   
-        <title>TWO</title>
+        <title>{{ $title }}</title>
+
+        <base href="{{ asset('/') }}" />
+    
+        <meta name="description" content="{{ $meta_description }}" />
+        <meta name="keywords" content="{{ $meta_keywords }}" />
 
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="{{ asset('public/assets/') }}/css/bootstrap.min.css" type="text/css">    
         <link rel="stylesheet" href="{{ asset('public/assets/') }}/css/owl.carousel.min.css" type="text/css"> 
         <link rel="stylesheet" href="{{ asset('public/assets/') }}/css/reset.css" type="text/css">    
         <link rel="stylesheet" href="{{ asset('public/assets/') }}/css/style.css" type="text/css">    
+
+        <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
 
     <body>

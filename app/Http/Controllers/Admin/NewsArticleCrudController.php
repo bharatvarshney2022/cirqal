@@ -46,7 +46,7 @@ class NewsArticleCrudController extends CrudController
             $this->crud->addColumn('status');
             $this->crud->addColumn([
                 'name' => 'featured',
-                'label' => 'Featured',
+                'label' => 'Trending',
                 'type' => 'check',
             ]);
             $this->crud->addColumn([
@@ -163,7 +163,7 @@ class NewsArticleCrudController extends CrudController
             ]);
             $this->crud->addField([
                 'name' => 'featured',
-                'label' => 'Featured item',
+                'label' => 'Trending item',
                 'type' => 'checkbox',
             ]);
         });
