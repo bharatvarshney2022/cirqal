@@ -161,6 +161,11 @@ class AuthorCrudController extends CrudController
                 'type'  => 'password',
             ],
             [
+                'name'  => 'user_photo',
+                'label' => trans('backpack::permissionmanager.password_confirmation'),
+                'type'  => 'browse',
+            ],
+            [
                 // two interconnected entities
                 'label'             => trans('backpack::permissionmanager.user_role_permission'),
                 'field_unique_name' => 'user_role_permission',
