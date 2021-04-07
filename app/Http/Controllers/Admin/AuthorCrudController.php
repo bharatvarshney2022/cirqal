@@ -36,6 +36,11 @@ class AuthorCrudController extends CrudController
                 'label' => trans('backpack::permissionmanager.email'),
                 'type'  => 'email',
             ],
+            [
+                'name'  => 'user_photo',
+                'label' => trans('backpack::permissionmanager.user_photo'),
+                'type'  => 'image',
+            ],
             /*[ // n-n relationship (with pivot table)
                 'label'     => trans('backpack::permissionmanager.roles'), // Table column heading
                 'type'      => 'select_multiple',
@@ -162,7 +167,7 @@ class AuthorCrudController extends CrudController
             ],
             [
                 'name'  => 'user_photo',
-                'label' => trans('backpack::permissionmanager.password_confirmation'),
+                'label' => trans('backpack::permissionmanager.user_photo'),
                 'type'  => 'browse',
             ],
             [

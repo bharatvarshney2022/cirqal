@@ -20,6 +20,7 @@ return [
     'user_plural'           => 'Users',
     'email'                 => 'Email',
     'extra_permissions'     => 'Extra Permissions',
+    'user_photo'            => 'Photo',
     'password'              => 'Password',
     'password_confirmation' => 'Password Confirmation',
     'user_role_permission'  => 'User Role Permissions',
