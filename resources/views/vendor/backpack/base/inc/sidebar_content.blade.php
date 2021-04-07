@@ -13,7 +13,7 @@
 		<li class="nav-item"><a class="nav-link" href="{{ backpack_url('tag') }}"><i class="nav-icon la la-tag"></i> Tags</a></li>
 
 		<li class="nav-item"><a class="nav-link" href="{{ backpack_url('article') }}"><i class="nav-icon la la-newspaper-o"></i> Article</a></li>
-		<li class="nav-item"><a class="nav-link" href="{{ backpack_url('article_category') }}"><i class="nav-icon la la-list"></i> Article Category</a></li>
+		<li class="nav-item"><a class="nav-link" href="{{ backpack_url('article_category') }}"><i class="nav-icon la la-list"></i> Topics</a></li>
     </ul>
 </li>
 

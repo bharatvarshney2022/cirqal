@@ -1,0 +1,426 @@
+/*header css start*/
+.header {
+    background: #F4F5F7;
+    height: 57px;
+    position: relative;
+    padding: 0 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.header-left {
+    float: left;
+    margin-top: 17px;
+}
+
+.header-mid {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.header-right {
+    float: right;
+    margin-top: 17px;
+}
+
+.header-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-right ul li {
+    float: left;
+    margin-left: 26px;
+}
+/*header css end*/
+
+/*footer css start*/
+.footer-bar {
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 98;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,.7);
+    display: flex;
+    min-height: 73px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: transform 350ms ease!important;
+}
+
+.footer-bar a {
+    color: #1f1f1f;
+    padding-top: 12px;
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.footer-bar a i {
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-bar a span {
+    z-index: 2;
+    display: block;
+    font-size: 11px;
+    color: #757889;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.footer-bar .circle-nav i {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 85%;
+    top: -23px;
+    z-index: 0;
+    transform: translateX(-50%);
+    animation: footerAni 1s infinite;
+}
+
+.footer-bar a.circle-nav .footer-icon img {
+    height: 55px;
+}
+
+@keyframes footerAni {
+  0% {
+    transform: scale(1, 1) translateX(-50%)
+  }
+  50% {
+    transform: scale(1.05, 1.05) translateX(-48%)
+  }
+}
+
+.footer-bar a.circle-nav .footer-icon img {
+    height: 55px;
+}
+
+.footer-bar a.active span {
+    color: #000000;
+}
+
+.footer-bar a.active .footer-icon img {
+    filter: brightness(0);
+}
+/*footer css end*/
+
+
+.mid-area {
+    padding-bottom: 111px;
+}
+
+.post-box {
+    border-bottom: 1px solid #E7E7E7;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+}
+
+.post-user-top {
+    display: flex;
+    margin-bottom: 22px;
+    align-items: center;
+}
+
+.PUT-img {
+    width: 45px;
+    margin-right: 19px;
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.28));
+}
+
+.PUT-img img {
+    height: 45px;
+    width: 45px;
+    border-radius: 100px;
+}
+
+.PUT-name span {
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.PUT-name span a {
+    color: #000000;
+}
+
+.post-info {
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.post-info-img {
+    margin-right: 20px;
+}
+
+.post-info-img img {
+    height: 102px;
+    border-radius: 4px;
+}
+
+.post-info-cont h3 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 27px;
+}
+
+.post-info-cont p {
+    height: 94px;
+    overflow: hidden;
+    margin-bottom: 0;
+    color: #858585;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.post-footer-like {
+    box-shadow: -1px 1px 2px rgb(255 255 255 / 30%), 1px -1px 2px rgb(236 236 236 / 50%), inset 2px 2px 4px rgb(236 236 236 / 20%), inset -2px -2px 4px rgb(236 236 236 / 20%), inset 2px -2px 4px rgb(255 255 255 / 90%), inset -2px 2px 5px rgb(236 236 236 / 90%);
+    background: #F6F6F6;
+    border-radius: 100px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.post-info-details {
+    margin-bottom: 22px;
+}
+
+.post-info-details .post-info-img {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.post-info-details .post-info-img img {
+    height: auto;
+    width: 100%;
+}
+
+.post-info-details .post-info-cont p {
+    overflow: initial;
+    height: auto;
+}
+
+.post-hash-area {
+    margin-top: 10px;
+}
+
+.post-hash-area a {
+    color: #333333;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.post-tag-area a {
+    color: #000000;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.post-tag-area {
+    margin-top: 7px;
+}
+
+.post-footer-like ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    height: 53px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.post-footer-like ul li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.PFL-button {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.PFL-button span {
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.post-read-time ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style-type: none;
+}
+
+.post-read-time li {
+    border-right: 1px solid #E7E7E7;
+    padding-right: 12px;
+    margin-right: 12px;
+}
+
+.post-read-time li:nth-last-child(1) {
+    border-right: none;
+    margin-right: 0;
+}
+
+.post-read-time li span {
+    font-size: 12px;
+    color: #333333;
+    margin-left: 4px;
+}
+
+.post-read-time {
+    margin-bottom: 10px;
+}
+
+.follow-topic-btn {
+    border-radius: 100px;
+    background: #fff;
+    border: 1px solid #E9E9E9;
+    color: #646464;
+    padding: 11px 23px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.owl-nav {
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+.topic-follow-area .item .follow-topic-btn:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.custom-heading {
+    width: 100%;
+    display: inline-block;
+    padding: 25px 0;
+    position: relative;
+}
+
+.custom-heading::before {
+    position: absolute;
+    content: "";
+    background: #E9E9E9;
+    height: 1px;
+    width: 100%;
+    top: 51%;
+    transform: translateY(-50%);
+}
+
+.post-area .custom-heading::before {
+    top: 65%;	
+}
+
+.custom-heading span {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    background: #fff;
+    padding-right: 10px;
+}
+
+.more-topic a {
+    font-size: 15px;
+    color: #1E96DA;
+    text-decoration: underline;
+}
+
+.topic-follow-area {
+    margin-bottom: 15px;
+}
+
+.people-follow-box {
+    text-align: center;
+}
+
+.people-follow-img img {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 auto 7px;
+}
+
+.people-follow-box span {
+    font-size: 13px;
+    color: #646464;
+    font-weight: 600;
+}
+
+.people-follow-img {
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.28));
+    display: inline-block;
+    width: 100%;
+}
+
+.post-area .custom-heading {
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

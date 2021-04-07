@@ -25,14 +25,14 @@ class ArticleCategoryCrudController extends CrudController
     {
         CRUD::setModel("App\Models\ArticleCategory");
         CRUD::setRoute(config('backpack.base.route_prefix', 'admin').'/article_category');
-        CRUD::setEntityNameStrings('article category', 'article categories');
+        CRUD::setEntityNameStrings('Topic', 'Topics');
     }
 
     protected function setupListOperation()
     {
         CRUD::addColumn('name');
         CRUD::addColumn('slug');
-        CRUD::addColumn('parent');
+        //CRUD::addColumn('parent');
         CRUD::addColumn([   // select_multiple: n-n relationship (with pivot table)
             'label'     => 'Articles', // Table column heading
             'type'      => 'relationship_count',

@@ -1,0 +1,200 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+button:focus {
+	outline: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+select { outline: none; }
+select:-moz-focusring {
+  color:transparent;
+  text-shadow:0 0 0 #000; /* your normal text color here */
+}
+
+.center {
+  text-align: center;
+}
+
+.margintop20 {
+	margin-top: 20px;
+}
+
+.margintop30 {
+	margin-top: 30px;
+}
+
+.margintop40 {
+	margin-top: 40px;
+}
+
+.margintop50 {
+	margin-top: 50px;
+}
+
+.margintop60 {
+	margin-top: 60px;
+}
+
+.margintop70 {
+	margin-top: 70px;
+}
+
+.margintop80 {
+	margin-top: 80px;
+}
+
+.margintop90 {
+	margin-top: 90px;
+}
+
+.margintop100 {
+	margin-top: 100px;
+}
+/*margin top end*/
+
+
+
+/*margin bottom start*/
+.marginbottom10 {
+	margin-bottom: 10px;
+}
+
+.marginbottom20 {
+	margin-bottom: 20px;
+}
+
+.marginbottom30 {
+	margin-bottom: 30px;
+}
+
+.marginbottom40 {
+	margin-bottom: 40px;
+}
+
+.marginbottom50 {
+	margin-bottom: 50px;
+}
+
+.marginbottom60 {
+	margin-bottom: 60px;
+}
+
+.marginbottom70 {
+	margin-bottom: 70px;
+}
+
+.marginbottom80 {
+	margin-bottom: 80px;
+}
+
+.marginbottom90 {
+	margin-bottom: 90px;
+}
+
+.marginbottom100 {
+	margin-bottom: 100px;
+}
+
+.marginnone {
+	margin: 0 !important;
+}
+/*margin bottom end*/
+
+
+
+/*padding top start*/
+.paddingnone{
+	padding: 0 !important;
+}
+
+.paddingtop10 {
+	padding-top: 10px;
+}
+
+.paddingtop20 {
+	padding-top: 30px;
+}
+
+.paddingtop30 {
+	padding-top: 30px;
+}
+
+.paddingtop40 {
+	padding-top: 40px;
+}
+
+.paddingtop50 {
+	padding-top: 50px;
+}
+
+.paddingtop60 {
+	padding-top: 60px;
+}
+
+.paddingtop70 {
+	padding-top: 70px;
+}
+
+.paddingtop80 {
+	padding-top: 80px;
+}
+
+.paddingtop90 {
+	padding-top: 90px;
+}
+
+.paddingtop100 {
+	padding-top: 100px;
+}
+/*padding top end*/
+
+
+
+/*padding bottom start*/
+.paddingbottom10 {
+	padding-bottom: 10px;
+}
+
+.paddingbottom20 {
+	padding-bottom: 20px;
+}
+
+.paddingbottom30 {
+	padding-bottom: 30px;
+}
+
+.paddingbottom40 {
+	padding-bottom: 40px;
+}
+
+.paddingbottom50 {
+	padding-bottom: 50px;
+}
+
+.paddingbottom60 {
+	padding-bottom: 60px;
+}
+
+.paddingbottom70 {
+	padding-bottom: 70px;
+}
+
+.paddingbottom80 {
+	padding-bottom: 80px;
+}
+
+.paddingbottom90 {
+	padding-bottom: 90px;
+}
+
+.paddingbottom100 {
+	padding-bottom: 100px;
+}
+/*padding bottom end*/
