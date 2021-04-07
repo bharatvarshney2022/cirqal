@@ -6,7 +6,7 @@
             <div class="post-box">
                 <div class="post-user-top">
                     <div class="PUT-img">
-                        <img src="images/profile-1.png" alt="">
+                        <img src="{{ asset('public/assets/') }}/images/profile-1.png" alt="">
                     </div>
                     <div class="PUT-name">
                         <span><a href="">Jane Cooper</a></span>
@@ -14,7 +14,7 @@
                 </div>
                 <div class="post-info">
                     <div class="post-info-img">
-                        <img src="images/post-1.png" alt="">
+                        <img src="{{ asset('public/assets/') }}/images/post-1.png" alt="">
                     </div>
                     <div class="post-info-cont">
                         <h3>Lorem Ipsum is simply dummy printing industry.</h3>                         
@@ -25,29 +25,29 @@
                     <ul>    
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/like-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/like-icon.svg" alt="">
                                 <span>2.4k</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/comment-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/comment-icon.svg" alt="">
                                 <span>175</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/retwo-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/retwo-icon.svg" alt="">
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/share-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/share-icon.svg" alt="">
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/bookmark-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/bookmark-icon.svg" alt="">
                             </button>
                         </li>
                     </ul>
@@ -56,11 +56,11 @@
                 <div class="post-read-time">
                     <ul>
                         <li>
-                            <img src="images/calendar-icon.svg" alt="" class="post-read-img">
+                            <img src="{{ asset('public/assets/') }}/images/calendar-icon.svg" alt="" class="post-read-img">
                             <span>05-02-2021</span>
                         </li>
                         <li>
-                            <img src="images/read-clock-icon.svg" alt="" class="post-read-img">
+                            <img src="{{ asset('public/assets/') }}/images/read-clock-icon.svg" alt="" class="post-read-img">
                             <span>5 Minutes to read</span>
                         </li>
                     </ul>                       
@@ -69,7 +69,7 @@
             <div class="post-box">
                 <div class="post-user-top">
                     <div class="PUT-img">
-                        <img src="images/profile-1.png" alt="">
+                        <img src="{{ asset('public/assets/') }}/images/profile-1.png" alt="">
                     </div>
                     <div class="PUT-name">
                         <span><a href="">Jane Cooper</a></span>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="post-info">
                     <div class="post-info-img">
-                        <img src="images/post-1.png" alt="">                            
+                        <img src="{{ asset('public/assets/') }}/images/post-1.png" alt="">                            
                     </div>
                     <div class="post-info-cont">
                         <h3>Lorem Ipsum is simply dummy printing industry.</h3>                         
@@ -88,29 +88,29 @@
                     <ul>    
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/like-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/like-icon.svg" alt="">
                                 <span>2.4k</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/comment-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/comment-icon.svg" alt="">
                                 <span>175</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/retwo-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/retwo-icon.svg" alt="">
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/share-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/share-icon.svg" alt="">
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/bookmark-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/bookmark-icon.svg" alt="">
                             </button>
                         </li>
                     </ul>
@@ -145,37 +145,37 @@
             <div class="people_follow owl-carousel">
                 <div class="item">
                   <div class="people-follow-box">   
-                      <i class="people-follow-img"><img src="images/profile-6.png" alt=""></i>
+                      <i class="people-follow-img"><img src="{{ asset('public/assets/') }}/images/profile-6.png" alt=""></i>
                       <span>Albert</span>
                   </div>
                 </div>
                 <div class="item">
                   <div class="people-follow-box">   
-                      <i class="people-follow-img"><img src="images/people-follow-2.png" alt=""></i>
+                      <i class="people-follow-img"><img src="{{ asset('public/assets/') }}/images/people-follow-2.png" alt=""></i>
                       <span>Fisher</span>
                   </div>
                 </div>
                 <div class="item">
                   <div class="people-follow-box">   
-                      <i class="people-follow-img"><img src="images/people-follow-3.png" alt=""></i>
+                      <i class="people-follow-img"><img src="{{ asset('public/assets/') }}/images/people-follow-3.png" alt=""></i>
                       <span>Floyd</span>
                   </div>
                 </div>
                 <div class="item">
                   <div class="people-follow-box">   
-                      <i class="people-follow-img"><img src="images/people-follow-4.png" alt=""></i>
+                      <i class="people-follow-img"><img src="{{ asset('public/assets/') }}/images/people-follow-4.png" alt=""></i>
                       <span>Brooklyn</span>
                   </div>
                 </div>
                 <div class="item">
                   <div class="people-follow-box">   
-                      <i class="people-follow-img"><img src="images/profile-6.png" alt=""></i>
+                      <i class="people-follow-img"><img src="{{ asset('public/assets/') }}/images/profile-6.png" alt=""></i>
                       <span>Albert</span>
                   </div>
                 </div>
                 <div class="item">
                   <div class="people-follow-box">   
-                      <i class="people-follow-img"><img src="images/people-follow-2.png" alt=""></i>
+                      <i class="people-follow-img"><img src="{{ asset('public/assets/') }}/images/people-follow-2.png" alt=""></i>
                       <span>Fisher</span>
                   </div>
                 </div>
@@ -191,7 +191,7 @@
             <div class="post-box">
                 <div class="post-user-top">
                     <div class="PUT-img">
-                        <img src="images/profile-1.png" alt="">
+                        <img src="{{ asset('public/assets/') }}/images/profile-1.png" alt="">
                     </div>
                     <div class="PUT-name">
                         <span><a href="">Jane Cooper</a></span>
@@ -199,7 +199,7 @@
                 </div>
                 <div class="post-info">
                     <div class="post-info-img">
-                        <img src="images/post-1.png" alt="">                            
+                        <img src="{{ asset('public/assets/') }}/images/post-1.png" alt="">                            
                     </div>
                     <div class="post-info-cont">
                         <h3>Lorem Ipsum is simply dummy printing industry.</h3>                         
@@ -210,29 +210,29 @@
                     <ul>    
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/like-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/like-icon.svg" alt="">
                                 <span>2.4k</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/comment-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/comment-icon.svg" alt="">
                                 <span>175</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/retwo-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/retwo-icon.svg" alt="">
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/share-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/share-icon.svg" alt="">
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/bookmark-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/bookmark-icon.svg" alt="">
                             </button>
                         </li>
                     </ul>
@@ -241,11 +241,11 @@
                 <div class="post-read-time">
                     <ul>
                         <li>
-                            <img src="images/calendar-icon.svg" alt="" class="post-read-img">
+                            <img src="{{ asset('public/assets/') }}/images/calendar-icon.svg" alt="" class="post-read-img">
                             <span>05-02-2021</span>
                         </li>
                         <li>
-                            <img src="images/read-clock-icon.svg" alt="" class="post-read-img">
+                            <img src="{{ asset('public/assets/') }}/images/read-clock-icon.svg" alt="" class="post-read-img">
                             <span>5 Minutes to read</span>
                         </li>
                     </ul>                       
@@ -254,7 +254,7 @@
             <div class="post-box">
                 <div class="post-user-top">
                     <div class="PUT-img">
-                        <img src="images/profile-1.png" alt="">
+                        <img src="{{ asset('public/assets/') }}/images/profile-1.png" alt="">
                     </div>
                     <div class="PUT-name">
                         <span><a href="">Jane Cooper</a></span>
@@ -262,7 +262,7 @@
                 </div>
                 <div class="post-info">
                     <div class="post-info-img">
-                        <img src="images/post-1.png" alt="">                            
+                        <img src="{{ asset('public/assets/') }}/images/post-1.png" alt="">                            
                     </div>
                     <div class="post-info-cont">
                         <h3>Lorem Ipsum is simply dummy printing industry.</h3>                         
@@ -273,29 +273,29 @@
                     <ul>    
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/like-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/like-icon.svg" alt="">
                                 <span>2.4k</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/comment-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/comment-icon.svg" alt="">
                                 <span>175</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/retwo-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/retwo-icon.svg" alt="">
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/share-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/share-icon.svg" alt="">
                             </button>
                         </li>
                         <li>
                             <button type="button" class="PFL-button">
-                                <img src="images/bookmark-icon.svg" alt="">
+                                <img src="{{ asset('public/assets/') }}/images/bookmark-icon.svg" alt="">
                             </button>
                         </li>
                     </ul>
