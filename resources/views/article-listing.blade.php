@@ -126,35 +126,12 @@
             </div>
             <div class="topics_follow owl-carousel">
                 <div class="item">
-                  <button type="button" class="follow-topic-btn">EDUCATION</button>
-                  <button type="button" class="follow-topic-btn">Investing</button>
-                  <button type="button" class="follow-topic-btn">Cricket</button>   
+                    @foreach($categoryData as $k => $row)
+                    <button type="button" class="follow-topic-btn">{{ $row->name }}</button>
+                    @if(($k % 3) == 2) </div><div class="item"> @endif
+                    @endforeach
                 </div>
-                <div class="item">
-                  <button type="button" class="follow-topic-btn">Investing</button>
-                  <button type="button" class="follow-topic-btn">Cricket</button>
-                  <button type="button" class="follow-topic-btn">Pin Tech</button>
-                </div>
-                <div class="item">
-                  <button type="button" class="follow-topic-btn">EDUCATION</button>
-                  <button type="button" class="follow-topic-btn">Investing</button>
-                  <button type="button" class="follow-topic-btn">Cricket</button>
-                </div>
-                <div class="item">
-                  <button type="button" class="follow-topic-btn">EDUCATION</button>
-                  <button type="button" class="follow-topic-btn">Investing</button>
-                  <button type="button" class="follow-topic-btn">Cricket</button>   
-                </div>
-                <div class="item">
-                  <button type="button" class="follow-topic-btn">Investing</button>
-                  <button type="button" class="follow-topic-btn">Cricket</button>
-                  <button type="button" class="follow-topic-btn">Pin Tech</button>
-                </div>
-                <div class="item">
-                  <button type="button" class="follow-topic-btn">EDUCATION</button>
-                  <button type="button" class="follow-topic-btn">Investing</button>
-                  <button type="button" class="follow-topic-btn">Cricket</button>
-                </div>
+                
             </div>
             <div class="more-topic"><a href="">More topics</a></div>                
         </div>
