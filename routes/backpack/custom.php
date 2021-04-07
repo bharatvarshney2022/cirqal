@@ -22,4 +22,8 @@ Route::group([
     Route::crud('article', 'NewsArticleCrudController');
     Route::crud('article_category', 'ArticleCategoryCrudController');
 	
+    Route::crud('newsarticle_bookmark', 'NewsArticleBookmarkCrudController');
+    Route::crud('newsarticle_comment', 'NewsArticleCommentCrudController');
+    Route::crud('newsarticle_like', 'NewsArticleLikeCrudController');
+    Route::crud('newsarticle_retweet', 'NewsArticleRetweetCrudController');
 }); // this should be the absolute last line of this file

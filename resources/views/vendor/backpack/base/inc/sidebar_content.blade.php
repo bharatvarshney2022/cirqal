@@ -13,6 +13,11 @@
 		<li class="nav-item"><a class="nav-link" href="{{ backpack_url('tag') }}"><i class="nav-icon la la-tag"></i> Tags</a></li>
 
 		<li class="nav-item"><a class="nav-link" href="{{ backpack_url('article') }}"><i class="nav-icon la la-newspaper-o"></i> Article</a></li>
+		<li class='nav-item'><a class='nav-link' href='{{ backpack_url('newsarticle_bookmark') }}'><i class='nav-icon la la-list'></i> Article Bookmark</a></li>
+		<li class='nav-item'><a class='nav-link' href='{{ backpack_url('newsarticle_comment') }}'><i class='nav-icon la la-list'></i> Article Comment</a></li>
+		<li class='nav-item'><a class='nav-link' href='{{ backpack_url('newsarticle_like') }}'><i class='nav-icon la la-list'></i> Article Like</a></li>
+		<li class='nav-item'><a class='nav-link' href='{{ backpack_url('newsarticle_retweet') }}'><i class='nav-icon la la-list'></i> Article Retweet</a></li>
+
 		<li class="nav-item"><a class="nav-link" href="{{ backpack_url('article_category') }}"><i class="nav-icon la la-list"></i> Topics</a></li>
     </ul>
 </li>
